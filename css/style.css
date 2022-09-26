@@ -1,0 +1,179 @@
+h1,
+h2,
+ul,
+p {
+	margin: 0;
+}
+
+body {
+	font-family: "Red Hat Display", sans-serif;
+	font-size: 16px;
+}
+
+h1,
+h2 {
+	color: #213153;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+p {
+	color: #7280A7;
+}
+
+.card {
+	height: 900px;
+}
+
+.container {
+	width: 1440px;
+	background-color: #E0E8FF;
+	padding: 0;
+}
+
+.order-summary,
+.card-discription,
+.icon-music {
+	background-repeat: no-repeat;
+}
+
+.card-content {
+	width: 450px;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	margin: auto auto;
+	background-color: #fff;
+	align-items: center;
+	border-radius: 20px;
+	box-shadow: 7px 7px 40px rgba(118, 108, 241, .3);
+}
+
+
+.order-summary {
+	display: flex;
+	flex-direction: column;
+	height: 900px;
+
+	background-image: url("../img/pattern-background-desktop.svg");
+	background-size: 110% auto;
+}
+
+.icon-music {
+	background-position: 7% 50%;
+}
+
+.card-discription {
+	margin-bottom: 25px;
+	padding-left: 70px;
+	padding-right: 70px;
+
+	background-image: url("../img/illustration-hero.svg");
+	padding-top: 270px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.plan {
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+	height: 100px;
+	margin-bottom: 30px;
+	line-height: 50%;
+	background-color: #F8F9FE;
+	border-radius: 10px;
+	background-image: url("../img/icon-music.svg");
+}
+
+.plan-info {
+	padding-left: 90px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+.plan h2 {
+	font-weight: 700;
+	margin-bottom: 15px;
+
+}
+
+.link-change {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 25px;
+	color: #2E23A6;
+	font-weight: 700;
+}
+
+.link-change:hover,
+.link-change:active {
+	color: #807BCF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.btn-cta {
+	padding-top: 15px;
+	padding-bottom: 14px;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 30px;
+	border-radius: 12px;
+	background-color: #382AE1;
+	color: #FDFAFF;
+	text-decoration: none;
+	box-shadow: 0 15px 15px #392ae137;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+	color: #FDFAFF;
+	background-color: #766CF1;
+	box-shadow: 0 15px 15px #776cf140;
+}
+
+
+.link-cancel {
+	color: #73799B;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.link-cancel:hover {
+	color: #213153;
+}
+
+
+@media (max-wigth: 768px) {
+
+	.container {
+		width: 100%;
+	}
+
+	.order-summary {
+		background-image: url("../img/pattern-background-mobile.svg");
+		background-size: cover;
+	}
+
+	.card-content {
+		min-width: 250px;
+		height: auto;
+	}
+
+}
